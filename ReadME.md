@@ -3,7 +3,7 @@
 Music Information Retrieval (MIR) on Indian folk music — built as part of the
 **IKS Internship Program**, project : *Analysis of Raag Origins of Indian Folk*
 
-##  **1. Dataset Used : Indian Folk Music Dataset**
+#  **1. Dataset Used : Indian Folk Music Dataset**
 
 A mel-spectrogram dataset spanning **15 Indian folk styles**, built to capture musical traditions that are scarce online.
 
@@ -30,7 +30,7 @@ A mel-spectrogram dataset spanning **15 Indian folk styles**, built to capture m
 Each recording is sliced into **3-second segments** with a **0.5-second sliding window**, then converted to a mel-spectrogram. Every segment is annotated with:
 
 `folk_style` · `state` · `artist` · `gender` · `song` · `source` · `no_of_artists` · `folk_style_id` · `state_id` · `artist_id` · `gender_id`
-##  **2. Pre-processing Core Idea :**
+#  **2. Pre-processing Core Idea :**
 
 Each `.pickle` file consists two very different things together — thousands of **mel-spectrograms** (the actual sound) and **metadata** (who sang it, what song, what style). Cramming both into one CSV means writing raw audio numbers as *text* — bloating a single file to several gigabytes for nothing.
 
