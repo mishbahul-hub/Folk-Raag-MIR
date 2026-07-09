@@ -42,6 +42,12 @@ So we split them:
 | Binary, compact, fast to load | song · genre · artist · gender |
 | Shape `(N, 128, 130)` | One row per segment |
 
+Three preprocessing steps are applied to every mel-spectrogram:
+
+1. **Length standardization (`fix_length`)** — forces every spectrogram to the exact same shape (128 × 130) by center-cropping if too long, or zero-padding if too short.
+2. **Normalization (`standardize`)** — rescales each spectrogram to zero mean and unit standard deviation.
+3. **SpecAugment-style augmentation (`spec_augment`)** — randomly blacks out small frequency/time chunks during training to make the model more robust.
+
 # **3. Related Works :**
 | Paper Title | Year | Dataset | Model Used | Accuracy |
 |---|---|---|---|---|
