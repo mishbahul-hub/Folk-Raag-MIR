@@ -42,6 +42,13 @@ So we split them:
 | Binary, compact, fast to load | song · genre · artist · gender |
 | Shape `(N, 128, 130)` | One row per segment |
 
+# **3. Related Works :**
+| Paper Title | Year | Dataset | Model Used | Accuracy |
+|---|---|---|---|---|
+| An improved ViT model for music genre classification based on mel spectrogram (Wu et al.) | 2025 | GTZAN (10 genres) | Improved ViT4 (CNN + Transformer hybrid + Enhanced Channel Attention) | 86.6% |
+| Music Genre Classification Using Prosodic, Stylistic, Syntactic and Sentiment-Based Features (Kovács & Baghiu) | 2025 | 14,000 Romanian songs (tabulaturi.ro), 7 merged genres | Logistic Regression | 69.94% mean F1 (test set) |
+| uFoC: Regional Classification of Turkish Folk Music | 2025 | TuFoC — 369 recordings, 5 Turkish regions | CNN (MobileNetV2, transfer learning) | 92.68% |
+| Musical Genre Classification Using Mel-Spectrograms and Mel-Scalograms | 2025 | GTZAN (10 genres) | MobileNetV2 / EfficientNetB0 / ResNet50 / VGG16 | 76.7±4.9% / 83.5±2.2% / 83.3±1.5% / 74.3±3.6% |
 # Results :
 
 ## Status
