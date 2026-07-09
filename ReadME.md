@@ -48,6 +48,9 @@ Three preprocessing steps are applied to every mel-spectrogram:
 2. **Normalization (`standardize`)** — rescales each spectrogram to zero mean and unit standard deviation.
 3. **SpecAugment-style augmentation (`spec_augment`)** — randomly blacks out small frequency/time chunks during training to make the model more robust.
 
+   <img width="344" height="172" alt="kaggle_data_explorer" src="https://github.com/user-attachments/assets/3305d61a-9621-4e21-a009-b733aa47e04b" />
+
+
 # **3. Related Works :**
 | Paper Title | Year | Dataset | Model Used | Accuracy |
 |---|---|---|---|---|
@@ -55,6 +58,18 @@ Three preprocessing steps are applied to every mel-spectrogram:
 | Music Genre Classification Using Prosodic, Stylistic, Syntactic and Sentiment-Based Features (Kovács & Baghiu) | 2025 | 14,000 Romanian songs (tabulaturi.ro), 7 merged genres | Logistic Regression | 69.94% mean F1 (test set) |
 | uFoC: Regional Classification of Turkish Folk Music | 2025 | TuFoC — 369 recordings, 5 Turkish regions | CNN (MobileNetV2, transfer learning) | 92.68% |
 | Musical Genre Classification Using Mel-Spectrograms and Mel-Scalograms | 2025 | GTZAN (10 genres) | MobileNetV2 / EfficientNetB0 / ResNet50 / VGG16 | 76.7±4.9% / 83.5±2.2% / 83.3±1.5% / 74.3±3.6% |
+
+# **4. Data Visualization :**
+
+**Sample counts per folk style** — class sizes range from under 10,000 (Naatupura_Paatu) to nearly 40,000 (Sufi), reflecting real-world imbalance in how well each style is digitized/represented:
+
+<img width="936" height="334" alt="sample_counts_per_style" src="https://github.com/user-attachments/assets/678d9aaa-680b-4ac8-a2c6-70fd4cf3474a" />
+
+
+**Mel-spectrogram examples** (3 of 15 classes) — note how distinct the spectral texture is even visually between styles:
+
+<img width="1153" height="368" alt="melspectrogram_examples" src="https://github.com/user-attachments/assets/049cb8e9-179e-446c-9ead-6dd20d715b21" />
+
 # Results :
 
 ## Status
