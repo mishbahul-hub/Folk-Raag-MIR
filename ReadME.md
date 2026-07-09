@@ -70,13 +70,29 @@ Three preprocessing steps are applied to every mel-spectrogram:
 
 <img width="1153" height="368" alt="melspectrogram_examples" src="https://github.com/user-attachments/assets/049cb8e9-179e-446c-9ead-6dd20d715b21" />
 
-# Results :
+# **5. Results :**
+All scores below are **macro-averaged** across the 15 folk-style classes.
 
-## Status
+| Model | Val. Accuracy | Precision | Recall | F1-score |
+|---|---|---|---|---|
+| AlexNet | 0.730 | 0.70 | 0.69 | 0.69 |
+| ResNet-34 | 0.750 | 0.71 | 0.70 | 0.70 |
+| **ResNet-18** | **0.762** | **0.72** | **0.72** | **0.71** |
+| MobileNet | 0.750 | 0.71 | 0.70 | 0.70 |
+| EfficientNet-B0 *(SOTA)* | 0.760 | 0.73 | 0.72 | 0.71 |
+| AST *(SOTA, pending)* | — | — | — | — |
+
+# **6. Confusion Matrix :**
+
+**EfficientNet-B0** — validation set:
+
+<img width="685" height="655" alt="confusion_matrix_efficientnet" src="https://github.com/user-attachments/assets/dd9034ee-004d-4a14-bb48-d5a9d920e631" />
+
+# **7. Status :**
+🚧 Complete AST fine-tuning and add it to the results comparison table.
+🚧 Explore **PaSST (2022)** as an improved AST variant.
+
  
-🚧 Work in progress — dataset and modeling notebooks are being added
-iteratively as the internship research progresses.
+# **8. Acknowledgements :**
  
-## Acknowledgements
- 
-IKS Internship Program 2026, NIT Silchar.
+*IKS Internship Program 2026, NIT Silchar.*
