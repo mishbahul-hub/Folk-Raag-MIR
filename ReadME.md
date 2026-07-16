@@ -80,7 +80,7 @@ All scores below are **macro-averaged** across the 15 folk-style classes.
 | **ResNet-18** | **0.762** | **0.72** | **0.72** | **0.71** |
 | MobileNet | 0.750 | 0.71 | 0.70 | 0.70 |
 | EfficientNet-B0 *(SOTA)* | 0.760 | 0.73 | 0.72 | 0.71 |
-| AST *(SOTA, pending)* | — | — | — | — |
+| AST *(SOTA, pending)* | 0.71 | — | — | — |
 
 # **6. Confusion Matrix :**
 
