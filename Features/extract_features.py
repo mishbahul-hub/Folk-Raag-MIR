@@ -22,15 +22,15 @@ from gammatone import gtgram
 from tqdm import tqdm
 
 # ---------------------------------------------------------------------------
-# Config
+# Config (according to Thesis)
 # ---------------------------------------------------------------------------
 SR = 16000          # sample rate to resample audio to
-N_FFT = 1024         # FFT window size
+N_FFT = 512         # FFT window size
 HOP_LENGTH = 160     # hop size (10 ms at 16kHz)
 N_MELS = 64          # number of mel bands
 GT_WIN_TIME = 0.025  # gammatone window (25 ms)
 GT_HOP_TIME = 0.010  # gammatone hop (10 ms)
-GT_CHANNELS = 64     # number of gammatone filters
+GT_CHANNELS = 128     # number of gammatone filters
 GT_F_MIN = 50        # lowest center frequency (Hz)
 
 
