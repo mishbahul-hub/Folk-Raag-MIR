@@ -89,8 +89,7 @@ All scores below are **macro-averaged** across the 15 folk-style classes.
 <img width="685" height="655" alt="confusion_matrix_efficientnet" src="https://github.com/user-attachments/assets/dd9034ee-004d-4a14-bb48-d5a9d920e631" />
 
 # **7. Status :**
-🚧 Complete AST fine-tuning and add it to the results comparison table.
-🚧 Explore **PaSST (2022)** as an improved AST variant.
+🚧 Creating new mel-spectrograms over a perfectly balanced class dataset.
 
  
 # **8. Acknowledgements :**
